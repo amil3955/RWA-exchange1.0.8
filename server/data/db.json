@@ -1,0 +1,134 @@
+{
+  "users": [
+    {
+      "id": "92b0281c-6b2d-4d9b-9ecb-ff2d3b4c1110",
+      "name": "Ava Merchant",
+      "email": "merchant@smartpay.dev",
+      "role": "merchant",
+      "passwordHash": "$2a$10$u1sHmc5QwDFi1Cdm42HcS.inJUO2cChn1ytY1/6Yr2vNhbbX6Ys/S",
+      "createdAt": "2024-07-01T12:00:00.000Z"
+    },
+    {
+      "id": "50027ed5-7655-4a79-a7a9-1f5339839fd9",
+      "name": "Liam Shopper",
+      "email": "user@smartpay.dev",
+      "role": "user",
+      "passwordHash": "$2a$10$1mY4nZMObn2ymlk/wEYBxejeRGna43EIBgzHuLlHotE5T7V6czS4.",
+      "createdAt": "2024-08-15T08:30:00.000Z"
+    }
+  ],
+  "goods": [
+    {
+      "id": "goods-card-001",
+      "name": "SmartPay Premium Membership",
+      "description": "Unlock unlimited fraud protection and instant settlement.",
+      "price": 120,
+      "discount": 12,
+      "payment_method": "card",
+      "merchant": "Ava Merchant LLC"
+    },
+    {
+      "id": "goods-bank-001",
+      "name": "SmartPay Business Account Top-up",
+      "description": "Faster settlement for payout-ready merchants.",
+      "price": 650,
+      "discount": 30,
+      "payment_method": "bank",
+      "merchant": "Ava Merchant LLC"
+    },
+    {
+      "id": "goods-crypto-001",
+      "name": "SmartPay Web3 Toolkit",
+      "description": "Developer add-on for checkout nodes and custom RPCs.",
+      "price": 0.08,
+      "discount": 3,
+      "payment_method": "crypto",
+      "merchant": "SmartPay Labs"
+    }
+  ],
+  "cryptos": [
+    {
+      "id": "eth-usd-rate",
+      "type": "ETH",
+      "price": 3125.25,
+      "updatedAt": "2025-11-21T00:00:00.000Z"
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-001",
+      "holder_id": "50027ed5-7655-4a79-a7a9-1f5339839fd9",
+      "last4": "4242",
+      "brand": "Visa",
+      "exp_month": "07",
+      "exp_year": "27",
+      "default": true,
+      "nickname": "Personal Visa"
+    }
+  ],
+  "banks": [
+    {
+      "id": "bank-001",
+      "holder_id": "50027ed5-7655-4a79-a7a9-1f5339839fd9",
+      "name": "Mercury Bank",
+      "account_last4": "8899",
+      "routing_number": "110000",
+      "nickname": "Operating Account",
+      "type": "checking"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "txn-001",
+      "user_id": "50027ed5-7655-4a79-a7a9-1f5339839fd9",
+      "merchant_id": "92b0281c-6b2d-4d9b-9ecb-ff2d3b4c1110",
+      "amount": 120,
+      "currency": "USD",
+      "payment_method": "card",
+      "status": "succeeded",
+      "createdAt": "2025-11-20T13:15:00.000Z"
+    },
+    {
+      "id": "txn-002",
+      "user_id": "50027ed5-7655-4a79-a7a9-1f5339839fd9",
+      "merchant_id": "92b0281c-6b2d-4d9b-9ecb-ff2d3b4c1110",
+      "amount": 0.08,
+      "currency": "ETH",
+      "payment_method": "crypto",
+      "status": "pending",
+      "createdAt": "2025-11-22T09:45:00.000Z"
+    }
+  ],
+  "rewards": [
+    {
+      "id": "reward-001",
+      "user_id": "50027ed5-7655-4a79-a7a9-1f5339839fd9",
+      "title": "Holiday Cashback",
+      "points": 320,
+      "status": "available"
+    },
+    {
+      "id": "reward-002",
+      "user_id": "50027ed5-7655-4a79-a7a9-1f5339839fd9",
+      "title": "Merchant Growth Credits",
+      "points": 1200,
+      "status": "locked"
+    }
+  ],
+  "marketData": [
+    {
+      "id": "market-eth",
+      "symbol": "ETH",
+      "price": 3125.25,
+      "change24h": 2.1
+    },
+    {
+      "id": "market-btc",
+      "symbol": "BTC",
+      "price": 67450.9,
+      "change24h": -0.4
+    }
+  ]
+}
+
+
